@@ -5,7 +5,7 @@ import ArrowDown from "<prefix>/assets/icons/arrow-down.svg";
 import Starsvg from "<prefix>/assets/icons/star.svg";
 export const HeroSection = () => {
   return (
-    <div className="py-36 md:pt-44 relative md:px-60 z-0 overflow-x-clip overflow-y-clip">
+    <div className="py-36 md:pt-44 relative md:px-60 z-0 overflow-x-clip">
       <div
         className="absolute inset-0 -z-30 opacity-5"
         style={{
@@ -17,84 +17,77 @@ export const HeroSection = () => {
       <div className="absolute inset-0 size-[900px] rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute inset-0 size-[1000px] rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute inset-0 size-[1200px] rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[500px]  animate-spin [animation-duration:30s]">
+      <div className="absolute top-[100%] left-[70%] -translate-x-1/2 -translate-y-1/2">
+        <div className=" size-[250px]  ">
           <div className="inline-flex animate-spin [animation-duration:5s]">
-            <Starsvg className="scale-[4] text-emerald-300" />
+            <Starsvg className="scale-[1.3] text-emerald-300/85" />
+          </div>
+        </div>
+      </div>
+      <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2">
+        <div className=" size-[250px] ">
+          <div className="inline-flex animate-spin [animation-duration:1s]">
+            <Starsvg className="scale-[1.2] text-blue-900" />
+          </div>
+        </div>
+      </div>
+      <div className="absolute top-[105%] left-[40%] -translate-x-1/2 -translate-y-1/2">
+        <div className=" size-[300px]">
+          <div className="inline-flex">
+            <Starsvg className="scale-[1] text-blue-700" />
           </div>
         </div>
       </div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[450px]   animate-spin [animation-duration:30s]">
-          <div className="inline-flex animate-spin [animation-duration:5s]">
-            <Starsvg className="size- text-emerald-300" />
+        <div className=" size-[400px] ">
+          <div className="inline-flex">
+            <Starsvg className="scale-[1.1] text-emerald-300" />
           </div>
         </div>
       </div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[300px]   animate-spin [animation-duration:30s]">
-          <div className="inline-flex animate-spin [animation-duration:5s]">
-            <Starsvg className="size- text-emerald-300" />
+      <div className="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className=" size-[200px]">
+          <div className="inline-flex">
+            <Starsvg className="scale-[1] text-emerald-300" />
           </div>
         </div>
       </div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[400px]   animate-spin [animation-duration:30s]">
-          <div className="inline-flex animate-spin [animation-duration:5s]">
-            <Starsvg className="size- text-emerald-300" />
+      <div className="absolute top-[70%] left-[80%] -translate-x-1/2 -translate-y-1/2">
+        <div className="  size-[300px]   ">
+          <div className="inline-flex">
+            <Starsvg className="scale-[1.7] text-emerald-700" />
           </div>
         </div>
       </div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[600px]   animate-spin [animation-duration:30s]">
-          <div className="inline-flex animate-spin [animation-duration:5s]">
-            <Starsvg className="scale-[6] text-emerald-300" />
+      <div className="absolute top-[30%] left-[70%] -translate-x-1/2 -translate-y-1/2">
+        <div className=" size-[100px]  ">
+          <div className="inline-flex ">
+            <Starsvg className="scale-[1.6] text-emerald-300" />
           </div>
         </div>
       </div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[800px]   animate-spin [animation-duration:30s]">
-          <div className="inline-flex animate-spin [animation-duration:5s]">
-            <Starsvg className="scale-[5.2] text-emerald-700" />
+      <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className=" size-[320px] ">
+          <div className="inline-flex">
+            <Starsvg className="scale-[1.5] text-emerald-900" />
           </div>
         </div>
       </div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[1000px]   animate-spin [animation-duration:30s]">
-          <div className="inline-flex animate-spin [animation-duration:5s]">
-            <Starsvg className="scale-[4] text-emerald-300" />
+      <div className="absolute top-[20%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className=" size-[200px]   ">
+          <div className="inline-flex ">
+            <Starsvg className="scale-[1.1] text-emerald-300" />
           </div>
         </div>
       </div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[920px]   animate-spin [animation-duration:30s]">
-          <div className="inline-flex animate-spin [animation-duration:5s]">
-            <Starsvg className="scale-[3] text-emerald-900" />
+      <div className="absolute bottom-[20%] left-[20%] -translate-x-1/2 -translate-y-1/2">
+        <div className=" size-[200px] ">
+          <div className="inline-flex ">
+            <Starsvg className="scale-[1.2] text-green-700" />
           </div>
         </div>
       </div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[1100px]   animate-spin [animation-duration:30s]">
-          <div className="inline-flex animate-spin [animation-duration:5s]">
-            <Starsvg className="scale-[2] text-emerald-300" />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[700px]   animate-spin [animation-duration:30s]">
-          <div className="inline-flex animate-spin [animation-duration:5s]">
-            <Starsvg className="scale-[3.5] text-emerald-500" />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[1100px]   animate-spin [animation-duration:30s]">
-          <div className="inline-flex animate-spin [animation-duration:5s]">
-            <Starsvg className="scale-[5] text-emerald-300" />
-          </div>
-        </div>
-      </div>
-      <div className="container">
+      <div className="container ">
         <div className="flex flex-col items-center">
           <Image className="size-[100px]" src={memojiImage} alt="A picture" />
           <div className="bg-gray-950 border px-4 mt-1 py-1.5 border-gray-800 inline-flex rounded-lg gap-4 items-center">
@@ -108,7 +101,7 @@ export const HeroSection = () => {
           <h1 className="font-serif text-3xl mt-6 tracking-wide text-center md:text-4xl">
             Building Exceptional User Experience
           </h1>
-          <p className="mt-2 text-center text-white/60 md:text-lg">
+          <p className="z-20 mt-2 text-center text-white/60 md:text-lg">
             I specialize in transforming designs in functional, high performing
             web applications. Lets discuss your next project.
           </p>

@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
     <div className="flex fixed w-full justify-center items-center top-3 font-medium">
-      <nav className="flex gap-1 p-0.5 border border-white/10 rounded-full bg-white/15 backdrop-blur-0">
+      <nav className="flex gap-1 p-0.5 border border-white/10 rounded-full bg-white/15 backdrop-blur-0 z-10">
         <a
           href="#"
           className="px-4 py-1.5 rounded-full text-white-70 font-semibold 
