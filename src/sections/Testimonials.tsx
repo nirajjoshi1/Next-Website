@@ -1,8 +1,13 @@
-import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
-import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
-import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
-import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
-import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import memojiAvatar1 from "<prefix>/assets/images/memoji-avatar-1.png";
+import Image from "next/image";
+import Link from "next/link";
+import {Card} from "<prefix>/components/Card"
+import memojiAvatar2 from "<prefix>/assets/images/memoji-avatar-2.png";
+import memojiAvatar3 from "<prefix>/assets/images/memoji-avatar-3.png";
+import memojiAvatar4 from "<prefix>/assets/images/memoji-avatar-4.png";
+import memojiAvatar5 from "<prefix>/assets/images/memoji-avatar-5.png";
+
+import test from "node:test";
 
 const testimonials = [
   {
@@ -38,5 +43,24 @@ const testimonials = [
 ];
 
 export const TestimonialsSection = () => {
-  return <div>Testimonials Section</div>;
+  return (
+    <div>
+      <p>Happy Clients</p>
+      <h2>What Clients Say about Me</h2>
+      <p>
+        Do not just take my world for it. See what my clients have to say about
+        my work.{" "}
+      </p>
+      <div>
+        {testimonials.map((testimonial) => (
+          <Card key={testimonial.name}>
+            <Image src={testimonial.avatar} alt="testimonial.name" />
+            <div>{testimonial.name}</div>
+            <div>{testimonial.position}</div>
+            <p>{testimonial.text}</p>
+          </Card>
+        ))}
+      </div>
+    </div>
+  );
 };
