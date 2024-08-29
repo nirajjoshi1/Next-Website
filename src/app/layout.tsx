@@ -3,8 +3,9 @@ import "./globals.css";
 import "./utility.css";
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "Niraj",
   description: "Created by Niraj",
+  
 };
 
 export default function RootLayout({
