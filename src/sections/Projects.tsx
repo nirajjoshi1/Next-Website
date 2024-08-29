@@ -6,6 +6,8 @@ import aiStartupLandingPage from "<prefix>/assets/images/ai-startup-landing-page
 import CheckIcon from "<prefix>/assets/icons/check-circle.svg";
 import ArrowUp from "<prefix>/assets/icons/arrow-up-right.svg";
 import grainImage from "<prefix>/assets/images/grain.jpg";
+import { SectionHeader } from "<prefix>/components/SectionHeader";
+
 const portfolioProjects = [
   {
     company: "Acme Corp",
@@ -49,17 +51,11 @@ export const ProjectsSection = () => {
   return (
     <section className="proj pb-16 lg:py-24 md:flex md:items-center md:justify-center lg:flex lg:items-center lg:justify-center">
       <div className="container lg:max-w-5xl ">
-        <div className="flex justify-center">
-          <p className="font-semibold uppercase text-center tracking-widest apple bg-gradient-to-t from-emerald-300 to-sky-400 text-transparent bg-clip-text">
-            Real-world Results
-          </p>
-        </div>
-        <h2 className="text-3xl font-serif text-center mt-6 md:text-5xl">
-          Featured Projects
-        </h2>
-        <p className="text-white/60 text-center mt-4 md:text-lg lg:text-xl mx-auto max-w-md">
-          See how I transformed into engaging digital experiences.
-        </p>
+        <SectionHeader
+          title="Real-world Results"
+          eyebrow="Featured Projects"
+          description="See how I transformed into engaging digital experiences."
+        />
         <div className="flex flex-col mt-10 gap-20 md:mt-20 ">
           {portfolioProjects.map((project) => (
             <div
