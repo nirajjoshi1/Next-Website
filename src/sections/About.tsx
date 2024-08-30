@@ -11,7 +11,7 @@ import ChromeIcon from "<prefix>/assets/icons/chrome.svg";
 import GitIcon from "<prefix>/assets/icons/github.svg";
 import bookImage from "<prefix>/assets/images/book-cover.png";
 import SmileImoji from "<prefix>/assets/images/memoji-smile.png";
-import mapImage from "<prefix>/assets/images/map.png";
+import mapImage from "<prefix>/assets/images/nepal.png";
 import Image from "next/image";
 
 const toolboxItems = [
