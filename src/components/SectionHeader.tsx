@@ -21,7 +21,7 @@ export const SectionHeader = ({
         <h2 className="text-3xl font-serif text-center mt-6 md:text-5xl">
           {eyebrow}
         </h2>
-        <p className="text-white/60 text-center mt-4 md:text-lg lg:text-xl mx-auto max-w-md ml-[0.19rem]">
+        <p className="text-white/60 text-center mt-4 md:text-lg lg:text-xl mx-auto max-w-md]">
           {description}
         </p>
       </>

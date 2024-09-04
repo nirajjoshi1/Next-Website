@@ -3,6 +3,7 @@ import grainImage from "<prefix>/assets/images/grain.jpg";
 import Image from "next/image";
 import ArrowDown from "<prefix>/assets/icons/arrow-down.svg";
 import Starsvg from "<prefix>/assets/icons/star.svg";
+import {HeroOrbit} from "<prefix>/components/HeroOrbit"
 export const HeroSection = () => {
   return (
     <div className="py-36 md:pt-44 relative md:px-60 z-0 overflow-x-clip">
@@ -17,81 +18,16 @@ export const HeroSection = () => {
       <div className="absolute inset-0 size-[900px] rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute inset-0 size-[1000px] rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute inset-0 size-[1200px] rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute top-[100%] left-[70%] -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[250px]  ">
-          <div className="inline-flex animate-spin [animation-duration:5s]">
-            <Starsvg className="scale-[1.3] text-emerald-300/85" />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[250px] ">
-          <div className="inline-flex animate-spin [animation-duration:1s]">
-            <Starsvg className="scale-[1.2] text-blue-900" />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-[105%] left-[40%] -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[300px]">
-          <div className="inline-flex">
-            <Starsvg className="scale-[1] text-blue-700" />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[400px] ">
-          <div className="inline-flex">
-            <Starsvg className="scale-[1.1] text-emerald-300" />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[200px]">
-          <div className="inline-flex">
-            <Starsvg className="scale-[1] text-emerald-300" />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-[70%] left-[80%] -translate-x-1/2 -translate-y-1/2">
-        <div className="  size-[300px]   ">
-          <div className="inline-flex">
-            <Starsvg className="scale-[1.7] text-emerald-700" />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-[30%] left-[70%] -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[100px]  ">
-          <div className="inline-flex ">
-            <Starsvg className="scale-[1.6] text-emerald-300" />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[320px] ">
-          <div className="inline-flex">
-            <Starsvg className="scale-[1.5] text-emerald-900" />
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-[20%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[200px]   ">
-          <div className="inline-flex ">
-            <Starsvg className="scale-[1.1] text-emerald-300" />
-          </div>
-        </div>
-      </div>
-      <div className="absolute bottom-[20%] left-[20%] -translate-x-1/2 -translate-y-1/2">
-        <div className=" size-[200px] ">
-          <div className="inline-flex ">
-            <Starsvg className="scale-[1.2] text-green-700" />
-          </div>
-        </div>
-      </div>
+      <HeroOrbit size={800} rotation={-72} >
+        <Starsvg className="text-emerald-300 scale-[2]" />
+        </HeroOrbit>
       <div className="container ">
         <div className="flex flex-col items-center">
           <Image className="size-[100px]" src={memojiImage} alt="A picture" />
           <div className="bg-gray-950 border px-4 mt-1 py-1.5 border-gray-800 inline-flex rounded-lg gap-4 items-center">
-            <div className="bg-green-500 rounded-full size-2.5"></div>
+            <div className="bg-green-500 rounded-full size-2.5 ">
+              <div className="bg-green-500 rounded-full size-2.5 animate-ping"></div>
+            </div>
             <div className="font-medium text-sm">
               Available for new projects
             </div>
