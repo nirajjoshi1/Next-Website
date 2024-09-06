@@ -6,7 +6,7 @@ import Starsvg from "<prefix>/assets/icons/star.svg";
 import {HeroOrbit} from "<prefix>/components/HeroOrbit"
 export const HeroSection = () => {
   return (
-    <div className="py-36 md:pt-44 relative md:px-60 z-0 overflow-x-clip">
+    <div className="py-[13rem] md:py-56 md:pt-44 relative md:px-60 z-0 overflow-x-clip ">
       <div
         className="absolute inset-0 -z-30 opacity-5"
         style={{
@@ -14,13 +14,31 @@ export const HeroSection = () => {
         }}
       ></div>
       <div className="absolute inset-0 size-[600px] rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute inset-0 size-[700px] rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute inset-0 size-[800px] rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute inset-0 size-[900px] rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute inset-0 size-[1000px] rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute inset-0 size-[1200px] rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-      <HeroOrbit size={800} rotation={-72} >
-        <Starsvg className="text-emerald-300 scale-[2]" />
-        </HeroOrbit>
+      <div className="absolute opacity-0 md:opacity-100 inset-0 size-[900px] rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute opacity-0 inset-0 md:opacity-100 size-[1000px] rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+      <HeroOrbit size={323} rotation={92}>
+        <Starsvg className="text-emerald-300 scale-[1.5] opacity-20" />
+      </HeroOrbit>
+      <HeroOrbit size={530} rotation={92}>
+        <Starsvg className="text-emerald-300 scale-[1.8] opacity-0 md:opacity-45" />
+      </HeroOrbit>
+      <HeroOrbit size={400} rotation={98}>
+        <Starsvg className="text-emerald-300 scale-[2] opacity-10" />
+      </HeroOrbit>
+      <HeroOrbit size={440} rotation={79}>
+        <Starsvg className="text-emerald-300 scale-[2] opacity-0 md:opacity-45" />
+      </HeroOrbit>
+      <HeroOrbit size={530} rotation={78}>
+        <Starsvg className="text-emerald-300 scale-[2.5]  opacity-0 md:opacity-45" />
+      </HeroOrbit>
+      <HeroOrbit size={520} rotation={-41}>
+        <Starsvg className="text-sky-400 opacity-10 animate-bounce scale-[1.3] " />
+      </HeroOrbit>
+      <HeroOrbit size={540} rotation={-5}>
+        <Starsvg className="text-emerald-300 scale-[1.3] opacity-45" />
+      </HeroOrbit>
       <div className="container ">
         <div className="flex flex-col items-center">
           <Image className="size-[100px]" src={memojiImage} alt="A picture" />

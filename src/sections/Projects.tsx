@@ -6,6 +6,7 @@ import aiStartupLandingPage from "<prefix>/assets/images/ai-startup-landing-page
 import CheckIcon from "<prefix>/assets/icons/check-circle.svg";
 import ArrowUp from "<prefix>/assets/icons/arrow-up-right.svg";
 import grainImage from "<prefix>/assets/images/grain.jpg";
+import { Card } from "<prefix>/components/Card";
 import { SectionHeader } from "<prefix>/components/SectionHeader";
 
 const portfolioProjects = [
@@ -18,7 +19,7 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "",
     image: darkSaasLandingPage,
   },
   {
@@ -30,7 +31,7 @@ const portfolioProjects = [
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "",
     image: lightSaasLandingPage,
   },
   {
@@ -42,7 +43,7 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "",
     image: aiStartupLandingPage,
   },
 ];
@@ -57,12 +58,15 @@ export const ProjectsSection = () => {
           description="See how I transformed into engaging digital experiences."
         />
         <div className="flex flex-col mt-10 gap-20 md:mt-20 ">
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project, projIndex) => (
             <div
               key={project.title}
-              className="bg-gray-800 overflow-hidden z-0 rounded-3xl relative after:content-[''] 
+              className="bg-gray-800 overflow-hidden z-0 rounded-3xl  after:content-[''] 
                after:absolute after:z-[1] after:inset-0 after:outline-2 after:outline after:-outline-offset-2
-               after:rounded-3xl after:outline-white/20 px-8 pt-8 after:pointer-events-none md:pt-12 md-px-10 lg:pt-16 lg:px-20"
+               after:rounded-3xl after:outline-white/20 px-8 pt-8 after:pointer-events-none md:pt-12 md-px-10 lg:pt-16 lg:px-20 sticky "
+               style={{
+                top: `calc(64px + ${projIndex * 40}px)`,
+               }}
             >
               <div
                 className="absolute inset-0 -z-10 opacity-5"

@@ -21,7 +21,7 @@ const FooterLinks = [
 export const Footer = () => {
   return (
     <footer className="relative -z-10 overflow-x-clip lg:px-16 md:px-6">
-      <div className="absolute h-[500px] w-[1600px] bottom-0 left-1/2 pointer-events-none -translate-x-1/2 bg-emerald-300/30 [mask-image:radial-gradient(50%_50%_at_bottom_center,black,transparent)] -z-10"></div>
+      <div className="absolute h-[500px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 bg-emerald-300/30 [mask-image:radial-gradient(50%_50%_at_bottom_center,black,transparent)] -z-10"></div>
       <div className="container">
         <div className="border-t border-white/15 py-6 text-sm flex flex-col items-center gap-8 md:flex-row md:justify-between">
           <div className="lg:text-[21px] md:text-[16px]">
@@ -35,13 +35,14 @@ export const Footer = () => {
                 href={link.href}
                 target="_blank"
               >
-                <span className="font-semibold lg:text-[20px] cursor-pointer">
+                <button className="font-semibold lg:text-[20px] cursor-pointer">
                   {link.title}
-                </span>
+                </button>
                 <ArrowUpIcon className="scale-[0.7] lg:scale-[0.9]" />
               </a>
             ))}
           </nav>
+          
         </div>
       </div>
     </footer>

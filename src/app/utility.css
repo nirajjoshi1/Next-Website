@@ -5,3 +5,7 @@
             align-items: center;
         }
 }
+
+.spin{
+    animation-duration: 15s;
+}
