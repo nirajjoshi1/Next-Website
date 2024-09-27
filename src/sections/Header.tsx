@@ -7,6 +7,13 @@ export const Header = () => {
           className="px-4 py-1.5 rounded-full text-white-70 font-semibold 
            hover:text-white hover:bg-white/10 text-sm transition-all duration-300"
         >
+          Niraj
+        </a>
+        <a
+          href="#"
+          className="px-4 py-1.5 rounded-full text-white-70 font-semibold 
+           hover:text-white hover:bg-white/10 text-sm transition-all duration-300"
+        >
           Home
         </a>
         <a
@@ -30,6 +37,6 @@ export const Header = () => {
           Contact
         </a>
       </nav>
-    </div> 
+    </div>
   );
 };

@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.112.0",
+    "@react-three/fiber": "^8.17.7",
+    "@react-three/postprocessing": "^2.16.2",
+    "@types/three": "^0.168.0",
     "framer-motion": "^11.5.4",
     "locomotive-scroll": "^4.1.4",
     "next": "14.2.6",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.5.2"
+    "tailwind-merge": "^2.5.2",
+    "three": "^0.168.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",

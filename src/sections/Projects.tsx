@@ -43,7 +43,7 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "",
+    link: "https://appinsta-t98u.onrender.com/",
     image: aiStartupLandingPage,
   },
 ];
